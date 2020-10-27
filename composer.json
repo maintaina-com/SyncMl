@@ -1,7 +1,7 @@
 {
     "name": "horde/syncml",
     "description": "SyncML server library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org/libraries/Horde_SyncMl",
     "license": "LGPL-2.1",
     "authors": [
@@ -12,30 +12,27 @@
         }
     ],
     "version": "2.0.8",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Date": "^2",
-        "pear-pear.horde.org/Horde_Icalendar": "^2",
-        "pear-pear.horde.org/Horde_Log": "^2",
-        "pear-pear.horde.org/Horde_Support": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2",
-        "pear-pear.horde.org/Horde_Xml_Wbxml": "^2",
-        "pear-pear.horde.org/Horde_Translation": "^2.2"
+        "horde/date": "dev-master",
+        "horde/icalendar": "dev-master",
+        "horde/log": "dev-master",
+        "horde/support": "dev-master",
+        "horde/util": "dev-master",
+        "horde/xml_wbxml": "dev-master",
+        "horde/translation": "dev-master"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Auth": "^2",
-        "pear-pear.horde.org/Horde_Core": "^2"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_SyncMl": "2.*",
-        "pear-horde/Horde_SyncMl": "2.*"
+        "horde/auth": "^2",
+        "horde/core": "^2"
     },
     "autoload": {
         "psr-0": {
